@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const weatherIcon = document.getElementById("weather-icon");
 
 
-    const API_KEY = "77670cb24955edb8599dfe0350ed8f0a";
+    const API_KEY = "YOUR_API_KEY_HERE"; // Use environment variables in production
     // env variables
 
 

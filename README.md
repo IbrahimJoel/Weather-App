@@ -12,12 +12,29 @@ A modern weather application built with Vite and Tailwind CSS.
 
 ## Getting Started
 
+### Prerequisites
+
+You'll need an API key from [OpenWeatherMap](https://openweathermap.org/api). Sign up for a free account to get your API key.
+
 ### Installation
 
-Install dependencies:
+1. Clone the repository
+2. Install dependencies:
 
 ```bash
 npm install
+```
+
+3. Set up environment variables:
+
+Copy the `.env.example` file to `.env`:
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and add your OpenWeatherMap API key:
+```
+VITE_API_KEY=your_actual_api_key_here
 ```
 
 ### Development
@@ -45,6 +62,12 @@ Preview the production build:
 ```bash
 npm run preview
 ```
+
+## Environment Variables
+
+- `VITE_API_KEY` - Your OpenWeatherMap API key (required)
+
+**Note:** Never commit your `.env` file or share your API key publicly. The `.env` file is already included in `.gitignore`.
 
 ## Technologies
 

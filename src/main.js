@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const API_KEY = import.meta.env.VITE_API_KEY;
-    // env variables
 
 
     getWeatherBtn.addEventListener('click', async () => {
@@ -35,6 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     async function fetchweatherData(city){
+        // Check if API key is configured
+        if (!API_KEY || API_KEY === 'your_api_key_here') {
+            throw new Error('API Key not configured. Please set VITE_API_KEY in your .env file.');
+        }
+        
         // gets the data
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
 
