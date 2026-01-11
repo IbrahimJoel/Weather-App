@@ -1,3 +1,5 @@
+import './input.css';
+
 document.addEventListener("DOMContentLoaded", () => {
     const cityInput = document.getElementById("city-input");
     const getWeatherBtn = document.getElementById("get-weather-btn");
@@ -74,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         
         const iconClass = iconMap[condition] || 'fa-cloud-sun';
-        weatherIcon.innerHTML = `<i class="fas ${iconClass}"></i>`;
+        weatherIcon.innerHTML = `<i class="fas ${iconClass} animate-float"></i>`;
     }
 
     function showError(){
