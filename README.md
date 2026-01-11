@@ -67,7 +67,15 @@ npm run preview
 
 - `VITE_API_KEY` - Your OpenWeatherMap API key (required)
 
-**Note:** Never commit your `.env` file or share your API key publicly. The `.env` file is already included in `.gitignore`.
+### Security Notes
+
+⚠️ **IMPORTANT:** 
+- Never commit your `.env` file or share your API key publicly. The `.env` file is already included in `.gitignore`.
+- If you accidentally committed an API key to the repository, **rotate it immediately**:
+  1. Go to [OpenWeatherMap API Keys](https://home.openweathermap.org/api_keys)
+  2. Generate a new API key
+  3. Update your `.env` file with the new key
+  4. Delete the old key from your OpenWeatherMap account
 
 ## Technologies
 
