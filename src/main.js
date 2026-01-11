@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const weatherIcon = document.getElementById("weather-icon");
 
 
-    const API_KEY = "77670cb24955edb8599dfe0350ed8f0a";
+    const API_KEY = import.meta.env.VITE_API_KEY;
     // env variables
 
 
